@@ -1,8 +1,15 @@
-# **Calling Single Nucleotide Variants and Structural Variants**
+---
+title: "Calling Single Nucleotide Variants and Structural Variants"
+author: "Jake Sauter"
+date: "3/16/2021"
+output: 
+  html_document: 
+    toc: true
+    toc_float: false
+    keep_md: true
+---
 
-A report by **Jake Sauter**
 
-date: 3/16/2021
 
 ## **Single Nucleotide Variants (SNVs)**
 
@@ -33,7 +40,7 @@ On line 16 of the vcf file, we can find the line.
 
 According to: [A survey and evaluation of Web-based tools/databases for variant analysis of TCGA data](https://www.researchgate.net/publication/324225321_A_survey_and_evaluation_of_Web-based_toolsdatabases_for_variant_analysis_of_TCGA_data), we can read the ids in the following way.
 
-![](R/images/paste-1922F9F4.png)
+![](images/paste-1922F9F4.png)
 
 With reference to this table of TCGA id formats, it seems that the **Case Submitted ID** for the sample is **TCGA-2G-AAH5** while either the **File UUID** for **Case UUID** is **46199149-5cd7-4e6c-a217-4354d138e7bb**
 

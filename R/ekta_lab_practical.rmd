@@ -1,0 +1,188 @@
+---
+title: "Coding and Non-coding Variants"
+author: "Jake Sauter"
+date: "3/15/2021"
+output: html_document
+editor_options: 
+  markdown: 
+    wrap: 72
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Introduction
+
+Thousands of somatic variants per cancer genome.
+
+Today we will be talking about WGS (Whole Genome Sequencing). This
+sequencing assay gives lower coverage depth, but a larger span over the
+genome.
+
+But what do modifications in introns mean? How can doctors understand
+what to do with informatin that isn't directly related to known genes
+and functions?
+
+How many modifications between people's genome vs how many modifications
+between somatic and cancer genome. Between people, there is an average
+of **4 Million** SNVs, while between the **somatic cancer cells** and
+**germline cells**, there are only differences of **a few thousand**
+SNVs (depending on the cancer)
+
+**Somatic Cells**: Soma (body) cells make up an organism, and in humans
+are **diploid** (They contain **2** copies of each chromosome (sister
+chromatids)). Vegetative cell or biological cell are synonyms of the
+Somatic cell.
+
+**Germline Cells**: Sex cells that facilitate reproduction. Germ cell,
+gamete, gametocyte are synonyms of the egg cell.
+
+**Somatic Variation**: Variations caused by damaged (and unrepaired) DNA
+from sources like UV light, smoking, or other environmental effects.
+These occur all the time, though sometimes the mutation occrs
+
+**Germinal Variation**: Furthermore, they can arise suddenly due to the
+errors in the cell division. One of the major reasons for germinal
+variation is the recombination. During the sex cell formation by
+meiosis, chromosomal abnormalities can occur due to nondisjunction
+mutation, etc. Furthermore, radiation also can cause for germinal
+variation.
+
+**Haplotype**: (haploid genotype)is a genotype that considers the
+singular chromosomes rather than the pairs of chromosomes. It can be all
+the chromosomes from one of the parents or a minor part of a chromosome,
+for example a sequence of 9000 base pairs.
+
+**Sister Chromatids**: Identical copies of chromosomes after cell
+meitosis
+
+**Homologous Chromosomes**: The two *different* copies of a chromosome
+that diploid organisms (like humans) inherit, one from each parent.
+(leads to **homologous recombination** -- crossover)
+
+**Structural Variation** -- The variation in structure of an organism's
+chromosome, consiting of many kinds of variation such as deletions,
+duplications, copy-number variants, insertions, inversions and
+translocations. Originally, a structure variation affects a sequence
+length about 1kb to 3Mb, which is larger than SNPs and smaller than
+chromosome abnormality (though the definitions have some overlap)
+
+**Single Nucleotide Polymorphism \< Structural Variation \< Chromosomal
+Abnormality**
+
+**eQTL** -- Expression quantitative trait loci -- Genomic loci that
+explain variation in expression levels of mRNAs. These are usually the
+product of a **single gene** with a specific chromosomal location.
+
+**Compltex Traits** -- Complex traits, also known as quantitative
+traits, are traits that do not behave according to simple Mendelian
+inheritance laws. More specifically, their inheritance **cannot be
+explained by the genetic segregation of a single gene**.
+
+**Quantitative Trait Locus**: A quantitative trait locus (QTL) is a
+locus (section of DNA) that **correlates with variation of a
+quantitative trait in the phenotype** of a population of organisms. --
+Is this what is identified during GWAS?
+
+**Promoters** -- A sequence of DNA to which proteins bind that initiate
+transcription of a single RNA from the DNA downstream of it. This RNA
+may encode a protein, or can have a function in and of itself, such as
+tRNA, mRNA, or rRNA. Promoters are located near the transcription start
+sites of genes, upstream on the DNA (towards the 5' region of the sense
+strand)
+
+**Enhancers** -- A short (50--1500 bp) region of DNA that can be bound
+by transcription factors. Enhancers are cis-acting. They can be located
+up to 1 Mbp (1,000,000 bp) away from the gene, upstream or downstream
+from the start site. There are hundreds of thousands of enhancers in the
+human genome. They are found in both prokaryotes and eukaryotes.
+
+**Conserved Non-Coding Sequence**: A DNA sequence of noncoding DNA that
+is evolutionarily conserved. These sequences are of interest for their
+potential to regulate gene production (Transcription Factors).
+
+**Nonsense mutations** -- Mutation that results in a premature stop
+codon, or a point-nonsense codon in the transcribed mRNA, and in a
+truncated, incomplete, and usually nonfunctional protein product
+
+**Missense mutation** -- Point mutation in which a single nucleotide
+change results in a codon that codes for a different amino acid. It is a
+type of **nonsynonymous substitution**, in which the final protein
+product is altered due to the mutation, unlike a **synonymous** or
+**silent** substituion (think about redundancy that is built into
+nucleotide triplet reading frame to amino acid mapping)
+
+Some cancers develop due to **multiple loci**
+
+**Most GWAS hits are found in non-coding regions** -- This result was
+only learned a few years ago and was very surprising to most.
+
+-   Non-Coding regions are more important then previously though
+
+**BRCA** mutations are mutations in the **germline** that give the human
+a much larger risk at developing breast cancer at a younger age.
+
+**Burden Test** -- Test used to determine **rare germline** whole genome
+sequencing
+
+**Enhancers and Promoters** -- Very similar, transient polymerase
+binding to **both** promoters and enhancers seems to occur **though not
+stable like with promoter-specific tfs and enhancer specific tfs**
+
+**loop anchors** -- CTCFs bind promoter / enhancers
+
+**Enhancer/Promoter and Gene interations**
+
+-   Many enhancers to one gene
+-   Manger genes effected by one enhancer
+
+## **References**
+
+Mostly ENCODE has done a lot and other resources are available on ENCODE
+as well.
+
+## **Notes**
+
+**eQTLs** --- genotype and gene expression correlation
+
+Her lab has been doing deep learning work to predict the effect of
+non-coding mutations
+
+**proximial** -- close by **distal** -- far away **deletarious** --
+causing deletion
+
+## **FunSeq2**
+
+How probable is the impact of variants?
+
+**CTCF binds in the insulator regions**
+
+**Anchors can have multiple CTCF binding sites**
+
+A LOT OF RULES THAT WE STILL DO NOT KNOW
+
+-   Motif orientation matters
+
+## **DeepMILO: Deep Learning**
+
+Input: Sequence Output: Where will the loops be in the sequence
+
+## **CRISPR**
+
+How exactly does it work?
+
+How is is used to validate models and experimental findings?
+
+When did it win the nobel prize?
+
+**NER** -- Nucleosome Excision Repair proteins
+
+-   Can be a confounding variable as there might not be increased rate
+    of mutation, but decreased rate of repair
+
+## CNC DataBase
+
+## ATAC-Seq + RNA Seq Machine Learning Application
+
+Friday -- ICB research method talks
